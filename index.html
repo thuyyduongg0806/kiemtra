@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<body>
+    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <style>
+        
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: calc(100% - 10px);
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center; font-size: 50;">Bài tập 1</h2>
+    <p>Câu 1: Cho một số tự nhiên n nhập từ bàn phím, xây dựng hàm in ra màn hình giai thừa của số vừa nhập có sử dụng vòng lặp.</p>
+    <div class="container">
+        <h2>Tính giai thừa</h2>
+        <div class="form-group">
+            <label for="number">Nhập số tự nhiên n:</label>
+            <input type="number" id="number" placeholder="Nhập số tự nhiên n" required>
+        </div>
+        <button class="btn" onclick="calculateFactorial()">Tính giai thừa</button>
+        <div id="result"></div>
+    </div>
+         <h2 style="text-align: center; font-size: 50;">Bài tập 2</h2>
+         <p>
+            Dưới đây là một phát biểu cho bài toán kiểm tra tam giác:
+            
+            "Viết một chương trình để kiểm tra xem ba độ dài cạnh (a, b, c) được cung cấp có tạo thành một tam giác hay không. Nếu đúng, chương trình sẽ xác định loại tam giác đó (tam giác đều, tam giác cân, tam giác bình thường), nếu không, chương trình sẽ thông báo rằng không thể tạo thành một tam giác."</p>
+         <div class="container">
+            <h2>Kiểm tra tam giác</h2>
+            <form id="triangleForm">
+                <div class="form-group">
+                    <label for="sideA">Độ dài cạnh a:</label>
+                    <input type="number" id="sideA" name="sideA" placeholder="Nhập độ dài cạnh a" required>
+                </div>
+                <div class="form-group">
+                    <label for="sideB">Độ dài cạnh b:</label>
+                    <input type="number" id="sideB" name="sideB" placeholder="Nhập độ dài cạnh b" required>
+                </div>
+                <div class="form-group">
+                    <label for="sideC">Độ dài cạnh c:</label>
+                    <input type="number" id="sideC" name="sideC" placeholder="Nhập độ dài cạnh c" required>
+                </div>
+                <button type="button" class="btn" onclick="checkTriangle()">Kiểm tra</button>
+            </form>
+            <p id="result" class="result"></p>
+        </div>
+       
+        <h2 style="text-align: center; font-size: 50;">Bài tập 3</h2>
+        <p>Khi người dùng click vào button đăng ký thì lưu toàn bộ thông tin vào LocalStorage</p>
+        <p>Tạo ra 1 trang web mới là: show.html -> Lấy thông tin lưu trong LocalStorage và hiển thị ra màn hình</p>
+        <p>Kiểm tra lỗi nếu người dùng không nhập gì mà bấm “submit” (nâng cao) </p>
+    <div class="container">
+        <h2>Đăng ký</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Tuổi:</label>
+                <input type="number" id="age" name="age" placeholder="Nhập tuổi của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+            </div>
+            <button type="submit" class="btn">Đăng ký</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    
+    <script src= "bai1.js"></script>
+</body>
+</html>
+</body>
+</html>
